@@ -39,7 +39,7 @@ function loadQuestion(){
 		return Math.random() - 0.5;
 	});
 	q.opts.forEach((el)=>{
-		const span = maker('span',main,'box',el);
+		const span = maker('button',main,'box',el);
 		span.correct = q.answer;
 		span.selOpt = el;
 		span.classList.add('box1');

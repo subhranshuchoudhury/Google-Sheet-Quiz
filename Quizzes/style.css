@@ -41,16 +41,18 @@ body{
 /*Options*/
 .box{
 	padding: 5px;
-	border: 2px solid black;
+	border: 2px solid #FF4742;
+  display: table;
+  min-width: 30%;
 	border-radius: 5px;
 	padding: 5px;
   margin: 2.5px;
 }
 
 .box1:hover{
-	background-color: #FF4742;
-	border: 2px solid #FF4742;;
-	color: white;
+	background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
 	cursor: pointer;
 }
 #container{
