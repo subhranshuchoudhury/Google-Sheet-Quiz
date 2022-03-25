@@ -1,0 +1,108 @@
+body{
+	background-color: whitesmoke;
+}
+.topnav {
+	border-radius: 23px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.topnav a {
+  float: left;
+  color: red;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #FF4742;
+  color: white;
+}
+.question{
+	padding: 10px;
+	margin-bottom: 20px;
+	font-size: 1.5rem;
+}
+
+.main{
+	border: 5px solid #FF4742;
+	border-radius: 23px;
+	padding: 20px;
+	width: auto;
+	margin: auto;
+}
+/*Options*/
+.box{
+	padding: 5px;
+	border: 2px solid black;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+.box1:hover{
+	background-color: #FF4742;
+	border: 2px solid #FF4742;;
+	color: white;
+	cursor: pointer;
+}
+#container{
+	margin: 30px;
+	background-color: white;
+	border-radius: 27px;
+}
+button{
+	background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+
+}
+
+
+button:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+button:active {
+  opacity: .5;
+}
+
+#wel_text{
+	margin: 7rem;
+	color: #FF4742;
+}
+
+#quiz-btns-bg{
+	background-color: white;
+	width: 90%;
+	padding: 10px;
+	border-radius: 23px;
+}
