@@ -106,3 +106,7 @@ button:active {
 	padding: 10px;
 	border-radius: 23px;
 }
+
+p{
+	width: 90%;
+}
