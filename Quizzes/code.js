@@ -1,5 +1,3 @@
-const url = 'https://script.google.com/macros/s/AKfycbylJgGd4tyk5w777oUUZMdv5cpy0sTeFpjCKulzZQMQ9UXN09Ihuyn61l0TFDz7Zoew/exec';
-
 const btn = document.querySelector('.btn');
 const btnreload = document.querySelector('.reloadbtn');
 const output = document.querySelector('.output');
