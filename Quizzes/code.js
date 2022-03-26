@@ -39,7 +39,7 @@ function loadQuestion(){
 	const q = game.data[game.que];
 	output.innerHTML = '';
 	const main = maker('div',output,'main','');
-	const que = maker('div',main,'question',`Q: ${q.question}`);
+	const que = maker('div',main,'question',`Q: ${q.question} ?`);
 	q.opts.sort(()=>{
 		return Math.random() - 0.5;
 	});
