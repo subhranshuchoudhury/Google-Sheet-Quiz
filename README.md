@@ -6,10 +6,15 @@
 
 # Create Similar Project
 - You can use this code to create your own unique creation.
+- Survey Project.
+- Online Test/Exam Project.
+- Exam preparation project.
 
 # Feature
 - No paid database.
 - Easy to create project.
+- Result display.
+- Wrong/Right answer show in different color with correct answer.
 
 # Demo of the page : https://subhranshuchoudhury.github.io/Google-Sheet-Quiz/
 
@@ -17,6 +22,7 @@
 ![Screenshot_20220325_203116](https://user-images.githubusercontent.com/63858190/160146875-88c41f44-f7ff-4b90-9b2e-bd57ac0ee901.png)
 ![Screenshot_20220325_203135](https://user-images.githubusercontent.com/63858190/160146883-6519e7c6-6666-467b-8b0b-679a9c2fcde3.png)
 
-Sayionara:)
+- Its UI updated with some other elements. View('https://subhranshuchoudhury.github.io/Google-Sheet-Quiz/')
+- Sayionara:)
 
 
