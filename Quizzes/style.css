@@ -111,3 +111,30 @@ button:active {
 	padding: 10px;
 	border-radius: 23px;
 }
+
+#loadingscreen{
+  height: 200px;
+  width: 300px;
+  border-radius: 23px;
+}
+
+#score_display{
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  display: table;
+  margin: 0px;
+  padding: 5px;
+  border-radius: 23px;
+}
+
+#tq_display{
+  background-color: black;
+  color: white;
+  margin: 0px;
+  margin-bottom: 9px;
+  font-size: 1.5rem;
+  display: table;
+  padding: 5px;
+  border-radius: 23px;
+}

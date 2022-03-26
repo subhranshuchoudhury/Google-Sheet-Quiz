@@ -3,6 +3,8 @@ const url = 'https://script.google.com/macros/s/AKfycbylJgGd4tyk5w777oUUZMdv5cpy
 const btn = document.querySelector('.btn');
 const btnreload = document.querySelector('.reloadbtn');
 const output = document.querySelector('.output');
+document.getElementById("loadingscreen").style.display = "none";
+
 
 btn.textContent = 'Start Quiz';
 
@@ -11,9 +13,12 @@ btn.onclick = startGame;
 const game = {data:{},que:0,score:0,ans:[]};
 
 function startGame() {
-	btnreload.style.display='';
 	btn.style.display = 'none';
-	output.textContent = 'Loading ⌛..';
+    document.getElementById("loadingscreen").style.display = "";
+    output.textContent = 'Loading...';
+	btnreload.style.display='';
+
+
 	fetch(url)
 	.then(res => res.json())
 	.then(data =>{
@@ -31,15 +36,17 @@ function buildGame(){
 }
 
 function loadQuestion(){
+    document.getElementById("loadingscreen").style.display = "none";
+
 	const q = game.data[game.que];
 	output.innerHTML = '';
 	const main = maker('div',output,'main','');
-	const que = maker('div',main,'question',`${q.question}?`);
+	const que = maker('div',main,'question',`Q: ${q.question}`);
 	q.opts.sort(()=>{
 		return Math.random() - 0.5;
 	});
 	q.opts.forEach((el)=>{
-		const span = maker('button',main,'box',el);
+		const span = maker('button',main,'box','➡ '+el);
 		span.correct = q.answer;
 		span.selOpt = el;
 		span.classList.add('box1');
@@ -47,6 +54,9 @@ function loadQuestion(){
 	})
 	console.log(q);
 }
+
+
+
 function checker(e){
 	const el = e.target;
 	game.ans.push(el.selOpt);
@@ -74,7 +84,7 @@ function checker(e){
 	const total = game.data.length-game.que;
 	console.log(`remaining ${total}`);
 	if(total == 0){
-		btn1.textContent = 'Game Over! ⏰';
+		btn1.textContent = 'Show Result 📄';
 		btn1.onclick = endGame;
 
 	}else{
@@ -90,13 +100,15 @@ function endGame(){
 	//output.textContent = JSON.stringify(game);
 	output.innerHTML = ``;
 	game.ans.forEach((ele,ind)=>{
-		let html = `Question:${game.data[ind].question} Answer:${game.data[ind].answer} .Your response: ${ele}`;
+		let html = `Question:${game.data[ind].question} <br>Answer: ${game.data[ind].answer}<br>Your response: ${ele}`;
 		const div = maker('div',output,'main',html);
 		const bg = (game.data[ind].answer == ele) ? 'green' : 'red';
 		div.style.color = bg;
 	})
-	const htmlScore = `Score: 🎉 ${game.score} / ${game.data.length}`;
-	const div = maker('div',output,'main',htmlScore);
+    document.getElementById("score_display").style.display = "";
+	document.getElementById('score_display').innerHTML = `Score: 🎉 ${game.score} / ${game.data.length}`;
+    document.getElementById("tq_display").style.display = "";
+	document.getElementById('tq_display').innerHTML = `Total Questions: ${game.data.length}`;
 	console.log(game);
 
 }
