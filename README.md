@@ -11,6 +11,7 @@
 - Exam preparation project.
 
 # Feature
+- It is responsive both for mobiles and desktops.
 - No paid database.
 - Easy to create project.
 - Result display.
