@@ -3,8 +3,8 @@
 - In this project we will fetch quiz data from google sheet to our quiz website. 
 - This project is only possible for @Lsvekis (Thanks a lot). 
 - GS Codes (@Lsvekis).
-- Demo: [View](https://subhranshuchoudhury.github.io/Google-Sheet-Quiz/)
-- Google Spreadsheet: [View](https://docs.google.com/spreadsheets/d/1y5SVskRXwXFZnJLnBlKV1UU-4K0A5FWY_BCWWFyCgB4/edit?usp=drivesdk)
+
+
 
 # Create Similar Project
 - You can use this code to create your own unique creation.
@@ -20,7 +20,7 @@
 - Result display.
 - Wrong/Right answer show in different color with correct answer.
 
-# Demo of the page :
+# Demo of the page : https://subhranshuchoudhury.github.io/Google-Sheet-Quiz/)
 
 ![Screenshot_20220325_203049](https://user-images.githubusercontent.com/63858190/160146864-db1cb73c-6691-48f3-a447-8f199e260e0d.png)
 ![Screenshot_20220325_203116](https://user-images.githubusercontent.com/63858190/160146875-88c41f44-f7ff-4b90-9b2e-bd57ac0ee901.png)
@@ -28,6 +28,6 @@
 
 # Thanks to :
 - @Lsvekis (google app script)
-- https://getcssscan.com/css-buttons-examples (button css)
+- getcssscan (button css)
 
 
